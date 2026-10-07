@@ -1,0 +1,4 @@
+# app-ads.txt for Squeak Machine and Sky Glider (games.torvellan.com)
+# Lists the ad networks allowed to sell ad space in our apps.
+# After the Google AdMob account exists, add its line here, for example:
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

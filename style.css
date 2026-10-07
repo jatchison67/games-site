@@ -1,0 +1,45 @@
+/* games.torvellan.com — a small toy-shelf of a site for two cozy games.
+   Paper background with a faint grid (Sky Glider's notebook), ink outlines and offset shadows (Squeak Machine's toy box). */
+:root{
+  --paper:#fbf8f1; --grid:#ece6d8; --card:#fffdf8;
+  --ink:#2b2140; --muted:#675f78; --yellow:#ffc93c; --blue:#2f6fc4; --sky:#8fd0ff;
+  --display:"Lilita One","Arial Rounded MT Bold","Trebuchet MS",sans-serif;
+  --body:"Nunito",ui-rounded,"Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0; font-family:var(--body); font-weight:600; color:var(--ink); line-height:1.55;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:24px 24px}
+a{color:var(--blue); font-weight:800}
+a:focus-visible{outline:3px solid var(--yellow); outline-offset:2px}
+.wrap{max-width:860px; margin:0 auto; padding-inline:20px; padding-block:40px 56px}
+header.site{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 20px; margin-bottom:28px}
+.brand{font-family:var(--display); font-weight:400; font-size:1.25rem; text-decoration:none; color:var(--ink)}
+nav.site a{margin-left:16px; font-size:.95rem}
+nav.site a:first-child{margin-left:0}
+h1{font-family:var(--display); font-weight:400; font-size:clamp(2.2rem, 7vw, 3.4rem); line-height:1; margin:0 0 12px;
+  text-shadow:3px 3px 0 var(--yellow)}
+.lead{font-size:1.15rem; max-width:44ch; margin:0 0 32px; color:var(--muted)}
+.games{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:22px}
+.game{background:var(--card); border:3px solid var(--ink); border-radius:20px; box-shadow:5px 5px 0 var(--ink);
+  padding:20px; display:grid; grid-template-columns:96px 1fr; gap:16px; align-items:start}
+.game img{width:96px; height:96px; border-radius:22px; border:3px solid var(--ink)}
+.game h2{font-family:var(--display); font-weight:400; font-size:1.5rem; line-height:1.1; margin:2px 0 6px}
+.game p{margin:0 0 10px; font-size:.95rem}
+.soon{display:inline-block; font-size:.8rem; font-weight:900; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--sky); border:2px solid var(--ink); border-radius:999px; padding:2px 10px}
+.promise{margin-top:36px; background:var(--card); border:3px dashed var(--ink); border-radius:16px; padding:16px 20px; max-width:620px}
+.promise h2{font-family:var(--display); font-weight:400; font-size:1.2rem; margin:0 0 4px}
+.promise p{margin:0}
+footer.site{margin-top:44px; font-size:.88rem; color:var(--muted)}
+
+/* privacy policy */
+.doc{max-width:68ch}
+.doc h1{font-size:clamp(2rem, 6vw, 2.8rem)}
+.doc h2{font-family:var(--display); font-weight:400; font-size:1.35rem; margin:30px 0 6px}
+.doc p, .doc li{font-size:1rem}
+.doc ul{padding-left:1.2em}
+.meta{color:var(--muted); font-size:.95rem; margin:0 0 20px}
+.draft{background:#fff3c9; border:2px solid var(--ink); border-radius:12px; padding:10px 14px; font-size:.92rem}
